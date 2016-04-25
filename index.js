@@ -3,6 +3,8 @@ var bodyParser = require('body-parser')
 var request = require('request')
 var app = express()
 
+var token = "CAAOY4c7Yt0IBAI5GIix3GFtkGPDVtNZAVKdMzmta3ZCiy6Wu1UGHwSwBWfhNsG9a6GkYmRwIKAorC3pLThgzUK4l2Dcb9YggK7XqpZC8FXjhH4i3GAuJotCMhXh9xTJH5m5xGNDIucRMdXPZCurLGzu88A1RSD0q1e7YCXZCp42Y1pjMaxg9r00luMKqK1rSwj4M8ACbHjgZDZD"
+
 app.set('port', (process.env.PORT || 5000))
 
 // Process application/x-www-form-urlencoded
@@ -57,8 +59,6 @@ app.post('/webhook/', function (req, res) {
     }
     res.sendStatus(200)
 })
-
-var token = "<PAGE_ACCESS_TOKEN>"
 
 // Spin up the server
 app.listen(app.get('port'), function() {
