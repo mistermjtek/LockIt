@@ -1,0 +1,20 @@
+{
+  "name": "lockit-node",
+  "version": "1.0.0",
+  "description": "LockIt NodeJS Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/mistermjtek/lockit-node"
+  },
+  "author": "Michael Jeffrey Wu",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "request": "^2.72.0"
+  }
+}
